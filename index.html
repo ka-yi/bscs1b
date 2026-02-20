@@ -1,22 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ID Layout</title>
     <style>
-        .sample1{
-            background-color: black;
-            color: maroon;
+        body {
+        
+        }
+
+        .container {
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: rgb(194, 105, 146);
+        }
+
+        .photo {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            width: 300px;
+        }
+
+        .info p {
+            border-bottom: 1px solid black;
+            padding: 5px 0;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <div id="sample" style="background-color: pink; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;"
-       <p>K</p>
-       <p>A</p>
-       <p>Y</p>
-       <p>E</p>
-</body>
 
+<div class="container">
+
+    <div class="photo">
+        <img src="https://uploads.onecompiler.io/44e286jwz/44e274d9u/103f3b3c-4a2b-4b1d-92e0-43356fe06950.jpg" alt="My Photo">
+    </div>
+
+    <div class="info">
+        <p><strong>Name:</strong> De Guzman, Kyle D.</p>
+        <p><strong>Course:</strong> Bachelor of Science in Computer Science</p>
+        <p><strong>Section:</strong> BSCS-1B</p>
+        <p><strong>Control Number:</strong> 251101012</p>
+        <p><strong>About Me:</strong> Hello! I'm Kyle De Guzman, you can call me Kaye/Kayi, 18yrs old from GMA Cavite. My hobbies are Watching Anime, Singing, Playing Tennis</p>
+    </div>
+
+</div>
+
+</body>
 </html>
