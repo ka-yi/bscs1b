@@ -10,7 +10,6 @@
             justify-content: center;
             align-items: center;
 
-           
             background-image: url("https://uploads.onecompiler.io/44e286jwz/44ethq32q/download%20(13).jpg");
             background-size: cover;
             background-position: center;
@@ -19,17 +18,43 @@
             font-family: Arial, sans-serif;
         }
 
+        
+        .navbar {
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            text-align: center;
+            background: none; 
+        }
+
+        .navbar a {
+            text-decoration: none;
+            background-color: #FFB6C1; 
+            color: black;
+            font-weight: bold;
+            padding: 12px 35px;
+            margin: 0 15px;
+            font-size: 18px;
+            border-radius: 50px; 
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #ff9eb5;
+        }
+        
+
+
         .container {
             width: 400px;
             padding: 20px;
             border: 3px solid black;
-
-           
             background-color: #FFC1CC;
-
             text-align: center;
-            font-family: 'Cambria', serif; /* Use Cambria, fallback to any serif font */
+            font-family: 'Cambria', serif;
             border-radius: 17px;
+            margin-top: 80px; 
         }
 
         .photo {
@@ -58,6 +83,12 @@
 </head>
 <body>
 
+<div class="navbar">
+    <a href="#">Quizzes</a>
+    <a href="#">Activities</a>
+    <a href="#">Exams</a>
+</div>
+
 <div class="container">
 
     <div class="photo">
@@ -76,6 +107,7 @@
 
 </body>
 </html>
+
 
 
 
