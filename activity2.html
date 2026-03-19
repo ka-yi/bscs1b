@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hello, World!</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <form id= "reg form">
+     <div class="radio-group">
+       <input type="radio" name="gender" value="female" id="female">
+       <label for="female">female</label>
+       
+        <input type="radio" name="gender" value="male" id="male">
+       <label for="male">male</label>
+       
+        <input type="radio" name="gender" value="other" id="other">
+       <label for="other">other</label>
+       
+      </div>
+      
+    <div class="from group">
+      <label for="country">Country: </label>
+      <select id="country">
+        <option value = "">select country</option>
+        <option value = ""></option>
+        <option value = ""></option>
+        <option value = ""></option>
+        <option value = ""></option>
+        <option value = ""></option>
+        <option value = ""></option>
+        <option value = ""></option>
+      </select>
+      
+      <script>
+        function getFormsValues(){
+          let fullName = document.getElementId("fullName").value;
+          let email = document.getElementId("email").value;
+          let password = document.getElementId("password").value;
+          let confirmPassword = document.getElementId("confirmPassword".value);
+          let age = document.getElementId("age").value;
+          
+          let gender ="";
+          if (document.getElementId("male").checked){
+            gender="Male";
+          } else if { (document.getElementId("Female").checked) {
+            gender="Female";
+          } else if { (document.getElementId("Other").checked) {
+            gender="Other";
+        }
+        let country = document.getElementId("country").value;
+        let termAccepted = document.getElementId("Terms").value;
+        
+        return{
+          fullName: fullName,
+          email: email,
+          confirmPassword: confirmPassword,
+          age: age,
+          gender: gender,
+          country: country,
+          termAccepted: termAccepted,
+        };
+          }
+        function validationForm(){
+          let values = getElementId();
+          let errors = [];
+          
+          
+        if (values.fullName ===""){
+          errors.push("full name is required");
+        }
+        
+        if (values.emails ===""){
+           errors.push("full name is required");
+        } else if (values.email.includes("@") ||  !values.email.includes(".")){
+          errors.push("Please Enter a valid email address");
+        }
+        
+         if (values.password ===""){
+           errors.push("Password is required");
+        } else if (values.passwrd.length<6) {
+          errors.push("Please Enter a valid email address");
+        }
+      </script>
+    </div>
+       
+       
+ </body>
+</html>
